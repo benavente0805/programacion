@@ -4,43 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pokemon</title>
+    <title>POKEMON!</title>
     <script src="./js/pokemon.js"></script>
 </head>
-<body>
-  <h1>pokemon</h1>
-  
-  <section id="seleccionar-mascota">
-    <h2>elige un pokemon</h2>
+ <body>
+    <h1>POKEMON! 🔥💧🌱</h1>
+    <section id="seleccionar-mascota">
+        <h2>Elige tu mascota:</h2>
+        <label for="Charmander">Charmander</label>
+        <input type="radio" name="mascota" id="Charmander"/>
+        <label for="Bulbasaur">Bulbasaur</label>
+        <input type="radio" name="mascota" id="Bulbasaur">
+        <label for="Squirte">Squirte</label>
+        <input type="radio" name="mascota" id="Squirte">
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+    <section id="seleccionar-ataque">
+        <h2>Elige tu ataque:</h2>
+        <p>Tu mascota <span id='mascota-jugador'></span> tiene <span> 3</span> vidas</p>
+        <p>Las mascota <span id="mascota-enemigo"></span> del enemigo tiene <span> 3</span> vidas</p>
+        <p>
+            <button id="boton-fuego">Fuego 🔥</button>
+            <button id="boton-agua">Agua 💧</button>
+            <button id="boton-tierra">Tierra 🌱</button>
+        </p>
+    </section>
 
-    <label for="charmander">Charmander</label>
-    <input type="radio" name="pokemon" id="charmander">
-    <label for="bulbasaur">bulbasaur</label>
-    <input type="radio" name="pokemon" id="bulbasaur">
-    <label for="squirtle">squirtle</label>
-    <input type="radio" name="pokemon" id="squirtle">
-    <button id="boton-pokemon">seleccionar</button>
-  </section>
-
-  
-  <section id= "seleccionar-ataque">
-    <h2>elige tu ataque</h2>
-   
-    <p>tu pokemon <span id = "mascota-jugador"></span>tiene<span>3</span>vidas</p>
-    <p>elo pokemon <span id = "mascota-enemigo"></span> del enemigo tiene<span>3</span>vidas</p>
-      <button>fuego</button>
-      <button>agua</button>
-      <button>tierra</button>
-    </p>
-  
-  </section>
-
-  <section id="mensajes" >
-    <p>tu mascota ataco con fuego la mascota del enemigo ataco con tierra</p>
-  </section>
-
-  <section id="reiniciar">
-    <button>reiniciar</button>
-  </section>
+    <section id="mensajes">
+        <p>Tu mascota atacó con FUEGO, las mascota del enemigo atacó con TIERRA - GANASTE 🎉</p>
+    </section>
+    <section id="reiniciar">
+        <button>Reiniciar</button>
+    </section>
 </body>
 </html>
