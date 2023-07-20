@@ -6,17 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKEMON!</title>
     <script src="./js/pokemon.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
  <body>
-    <h1>POKEMON! 🔥💧🌱</h1>
+    
     <section id="seleccionar-mascota">
+        <h1>POKEMON! 🔥💧🌱</h1>
         <h2>Elige tu mascota:</h2>
-        <label for="Charmander">Charmander</label>
-        <input type="radio" name="mascota" id="Charmander"/>
-        <label for="Bulbasaur">Bulbasaur</label>
-        <input type="radio" name="mascota" id="Bulbasaur">
-        <label for="Squirte">Squirte</label>
-        <input type="radio" name="mascota" id="Squirte">
+  
+        <div class="tarjetas">
+            <label class ="tarjeta-de-pokemon" for="Charmander">
+                <p>Charmander</p>
+                <img src="./assets/charmander.png" alt="Charmander">
+            </label>
+            <input type="radio" name="mascota" id="Charmander"/>
+
+            <label class="tarjeta-de-pokemon" for="Bulbasaur">
+                <p>Bulbasaur</p>
+                <img src="./Assets/bulbasaur (1).png" alt="Bulbasaur">
+            </label>
+            <input type="radio" name="mascota" id="Bulbasaur">
+
+            <label class="tarjeta-de-pokemon" for="Squirte">
+                <p>Squirte</p>
+                <img src="./Assets/squirtle.png" alt="Squirte">
+            </label>
+            <input type="radio" name="mascota" id="Squirte">
+
+        </div>
         <button id="boton-mascota">Seleccionar</button>
     </section>
     <section id="seleccionar-ataque">
@@ -25,15 +42,20 @@
         <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
        
         <p>
-            <button id="boton-fuego">Fuego 🔥</button>
-            <button id="boton-agua">Agua 💧</button>
-            <button id="boton-tierra">Tierra 🌱</button>
+            <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+            <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
+            <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
         </p>
+
+        <section id="mensajes">
+        </section>
+        <section id="reiniciar">
+            <button id="boton-reiniciar">Reiniciar</button>
+        </section>
+        </section>
+
+      
     </section>
-    <section id="mensajes">
-        
-    </section>
-    <section id="reiniciar">
-        <button id="boton-reiniciar">Reiniciar</button>
-    </section>
+   
+
 </body>
